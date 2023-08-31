@@ -1,0 +1,364 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #000000;
+  display: flex;
+  width: 100vw;
+}
+.sidebar {
+  background-color: #000000;
+  width: 280px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  display: flex;
+  overflow-y: scroll;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+.logo {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+.logo > img {
+  max-width: 113px;
+  min-height: 38px;
+  margin: -3px;
+  margin-right: 3rem;
+}
+.menu1 h3{
+  margin-left: 2rem;
+}
+.menu1 h3,
+h4,
+a {
+  color: white;
+  font-family: "DM Sans", sans-serif;
+  text-decoration: none;
+ 
+}
+
+.menu1 {
+  width: 100%;
+  padding: 15px;
+  margin-top: -1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.sidebar-tabs {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-left: 60px;
+  margin-top: 20px;
+}
+.sidebar-tabs > img {
+  width: 19px;
+  height: auto;
+}
+
+.album-art {
+  min-width: 120px;
+}
+.album-art > img {
+  width: 80%;
+  margin-left: 22px;
+}
+
+/* Play List */
+
+.body {
+  width: 100%;
+  height: auto;
+  background-color: #3b3737;
+  font-family: "DM Sans", sans-serif;
+  overflow: hidden;
+}
+.container1 {
+  display: flex;
+  align-items: center;
+  margin: 7rem 2rem;
+}
+.container2 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: -6rem 2rem;
+}
+.album-img > img {
+  max-width: 153px;
+}
+.album-info {
+  padding: 2rem 2rem;
+  color: white;
+}
+.album-info h2 {
+  font-size: 4rem;
+  font-weight: 750;
+}
+.album-info p {
+  font-weight: normal;
+  font-size: 13px;
+  margin: 6px;
+}
+
+.album-likes {
+  gap: 2rem;
+  justify-content: flex-start;
+  display: flex;
+}
+
+.album-likes ul {
+  display: flex;
+  gap: 2rem;
+}
+
+.album-likes ul li,
+.album-info p {
+  color: #b4b8b7;
+}
+
+.img1 > img {
+  max-width: 38px;
+}
+
+.song-title {
+  margin: 10rem 2rem;
+  border: 2px solid white;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.song1 {
+  margin: 7rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  border: 2px solid white;
+  width: 90%;
+  height: 100vh;
+  position: relative;
+}
+
+.song-container {
+  max-width: 100%;
+  margin: auto;
+}
+.song-title {
+  border: 2px solid white;
+}
+
+.parent {
+  display: flex;
+  flex-direction: column;
+  margin: 8rem 2rem;
+}
+.child1 {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-inline: 2rem;
+}
+.child,
+.child1 {
+  border: 1px solid white;
+  padding: 10px;
+  margin: 5px;
+}
+
+.sub-child {
+  display: flex;
+  gap: 12px;
+}
+.singer {
+  display: flex;
+  flex-direction: column;
+}
+.child2 {
+  display: flex;
+  color: white;
+}
+
+table {
+  min-width: 95%;
+  border-collapse: collapse;
+  margin: 9rem 1rem;
+  color: white;
+}
+
+th,
+td {
+  /* border: 2px solid #dddddd; */
+  text-align: left;
+  padding: 8px;
+  border-right: none;
+  border-left: none;
+}
+tr {
+  /* border: 2px solid rgb(121, 118, 118); */
+  box-shadow: 2px 2px 4px rgb(121, 118, 118);
+}
+th {
+  /* background-color: #f2f2f2; */
+}
+tbody tr:hover {
+  background-color: #687270;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.singer h3 {
+  font-weight: normal;
+  font-size: 1.2rem;
+}
+.singer p {
+  font-weight: normal;
+  font-size: 0.8rem;
+  margin-top: 4px;
+}
+
+footer {
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  -height: 4rem;
+  overflow: hidden;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  /* gap:15rem; */
+  background-color: #000000;
+}
+.player {
+  display: flex;
+  justify-content: flex-start;
+  padding: 2rem;
+  gap: 1rem;
+}
+.player,
+.middle-player,
+.right-player {
+  align-items: center;
+  min-width: 30%;
+  height: 50px;
+  color: white;
+}
+.img1 {
+  min-height: 50px;
+}
+.img1 > img {
+  height: 100%;
+}
+.song-name span {
+  font-size: 14px;
+  font-weight: 700;
+  font-family: "DM Sans", sans-serif;
+}
+.song-name p {
+  font-size: 11px;
+  font-weight: 100;
+  color: #b6adad;
+  font-family: "DM Sans", sans-serif;
+}
+.green-heart {
+  width: 31px;
+  height: 37px;
+}
+.green-heart > img {
+  width: 90%;
+  height: 90%;
+}
+
+.player-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 0.5rem;
+  width: 95%;
+}
+.player-icons > img {
+  max-width: 23px;
+  height: 25px;
+}
+
+.middle-player {
+  display: flex;
+  justify-content: center;
+}
+.middle-subcontainer {
+  margin-bottom: 0.4rem;
+}
+.middle-musicbar {
+  display: flex;
+  justify-content: space-between;
+}
+.middle-player {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: auto;
+}
+.middle-musicbar img {
+  width: 100%;
+  height: 50%;
+}
+
+
+.middle-musicbar {
+  font-family: "DM Sans", sans-serif;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap:1rem;
+
+}
+.right-player {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.8rem;
+}
+.right-player input {
+  width: 88px;
+}
+.right-player > img {
+  width: auto;
+}
+.speaker-black {
+  background-color: white;
+  border-radius: 50%;
+}
+.listen-device {
+  background-color: #1ed760;
+  height: 30px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1rem;
+}
+.listen-device h1 {
+  font-size: 17px;
+  font-family: "DM Sans", sans-serif;
+}
