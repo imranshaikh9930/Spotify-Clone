@@ -44,9 +44,9 @@
 h4,
 a {
   color: white;
-  font-family: "DM Sans", sans-serif;
   text-decoration: none;
- 
+  font-family: "DM Sans", sans-serif;
+  font-size: 18px;
 }
 
 .menu1 {
